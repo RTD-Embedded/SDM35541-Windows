@@ -1,0 +1,76 @@
+;
+; SDM35541.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=RTD dataModules
+ClassGuid={A2CB91F8-D73C-406D-89E1-410F905F97BB}
+Provider=%ManufacturerName%
+CatalogFile=SDM35541.cat
+DriverVer = 02/13/2026,14.51.58.451
+PnpLockDown=1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+SDM35541.sys  = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64.10.0...16299 ; %13% support introduced in build 16299
+
+[Standard.NTamd64.10.0...16299] 
+%SDM35541.DeviceDesc%=SDM35541_Device, PCI\VEN_1435&DEV_5441
+
+[SDM35541_Device.NT]
+CopyFiles=File_Copy
+
+[File_Copy]
+SDM35541.sys
+
+[SDM35541_Device.NT.HW]
+AddReg=SDM35541_AddReg
+AddReg=SDM35541_Buffer_AddReg
+
+[SDM35541_AddReg]
+;reg-root,[subkey],[value-entry-name],[flags],[value][,[value]]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+HKR,,Security,,"D:P(A;;GA;;;SY)(A;;GA;;;BA)(A;;GRGWGXFA;;;AU)"
+
+[SDM35541_Buffer_AddReg]
+HKR,,Common_Buffer_Size,0x00010001,0x40000 
+
+;-------------- Service installation
+[SDM35541_Device.NT.Services]
+AddService = SDM35541,%SPSVCINST_ASSOCSERVICE%, SDM35541_Service_Inst
+
+; -------------- SDM35541 driver install sections
+[SDM35541_Service_Inst]
+DisplayName    = %SDM35541.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\SDM35541.sys
+
+[SDM35541_Device.NT.Wdf]
+KmdfService =  SDM35541, SDM35541_wdfsect
+
+[SDM35541_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="RTD Embedded Technologies, Inc."
+ClassName = "RTD dataModules"
+DiskName = "SDM35541 Device Installation Disk"
+SDM35541.DeviceDesc = "SDM35541 Device"
+SDM35541.SVCDESC = "SDM35541 Driver Service"

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <RemoteDebuggerCommand>C:\remotetemp\Adc\Adc.exe</RemoteDebuggerCommand>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <DeploymentDirectory>C:\remotetemp\Adc</DeploymentDirectory>
+    <RemoteDebuggerServerName>DESKTOP-BVH0IIS:4026</RemoteDebuggerServerName>
+    <RemoteDebuggerDebuggerType>NativeOnly</RemoteDebuggerDebuggerType>
+    <RemoteDebuggerWorkingDirectory>C:\remotetemp\Adc\</RemoteDebuggerWorkingDirectory>
+    <AdditionalFiles>$(ProjectDir)\..\SDM35541Lib_x64.dll;$(ProjectDir)\..\SDM35541Lib_x64.lib</AdditionalFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <RemoteDebuggerCommand>C:\remotetemp\Adc\Adc.exe</RemoteDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <DeploymentDirectory>C:\remotetemp\Adc</DeploymentDirectory>
+    <RemoteDebuggerServerName>DESKTOP-BVH0IIS:4026</RemoteDebuggerServerName>
+    <RemoteDebuggerDebuggerType>NativeOnly</RemoteDebuggerDebuggerType>
+    <RemoteDebuggerWorkingDirectory>C:\remotetemp\Adc\</RemoteDebuggerWorkingDirectory>
+    <AdditionalFiles>$(ProjectDir)\..\SDM35541Lib_x64.dll;$(ProjectDir)\..\SDM35541Lib_x64.lib</AdditionalFiles>
+  </PropertyGroup>
+</Project>
