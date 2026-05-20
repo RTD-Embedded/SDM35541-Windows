@@ -52,7 +52,7 @@ examples of how to work with the device and its software.
 
 #### Installing the Driver
 
-To install the driver, open the Windows Device Manager and select 'Action' from the top menu bar. Select 'Add drivers' and set the location to the DM35956 software package. Afterwards, you can check the installation by finding the board in the Device Manager under 'RTD dataModules'. (It should be shown without a yellow exclamation mark.)
+To install the driver, open the Windows Device Manager and select 'Action' from the top menu bar. Select 'Add drivers' and set the location to the SDM35541 software package. Afterwards, you can check the installation by finding the board in the Device Manager under 'RTD dataModules' (It should be shown without a yellow exclamation mark).
 
 #### Uninstalling the Driver
 
@@ -86,10 +86,10 @@ them on a system other than where they were compiled, make sure to
 install the Redistributable Package for your version of Visual Studio
 on to the target system. This is to avoid any issues with missing or
 incompatible DLLs. The Redistributable Package used to compile the
-example programs are included in the ./Install directory.
+example programs are included in the `Install\` directory.
 
 
-### [Examples/AboutInterrupt](Examples/AboutInterrupt/AboutInterrupt.cpp)
+### [AboutInterrupt](Examples/AboutInterrupt/AboutInterrupt.cpp)
 
 Demonstrates the use of the About Counter interrupt.
 Samples are gathered via the Pacer Clock which is triggered
@@ -103,7 +103,7 @@ No particular setup is required for this example.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/Adc](Examples/Adc/Adc.cpp)
+### [Adc](Examples/Adc/Adc.cpp)
 
 This example program demonstrates the use of
 a single ADC channel. The ADC FIFO is filled
@@ -116,7 +116,7 @@ Connect the signal of interest to AINx.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/AdcDma](Examples/AdcDma/AdcDma.cpp)
+### [AdcDma](Examples/AdcDma/AdcDma.cpp)
 
 This example program demonstrates the use of
 the ADC and DMA. The example will collect
@@ -130,7 +130,7 @@ Connect the signal of interest to AINx.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/AdcDacSimul](Examples/AdcDacSimul/AdcDacSimul.cpp)
+### [AdcDacSimul](Examples/AdcDacSimul/AdcDacSimul.cpp)
 
 This example program demonstrates the use of
 the ADC and DAC at the same time using DMA.
@@ -147,7 +147,7 @@ to AINx to loop the DAC to the ADC.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/AdcHsdinSimul](Examples/AdcHsdinSimul/AdcHsdinSimul.cpp)
+### [AdcHsdinSimul](Examples/AdcHsdinSimul/AdcHsdinSimul.cpp)
 
 This example program demonstrates the use
 of the ADC and the High Speed Digital Input
@@ -163,7 +163,7 @@ digital signals to the High Speed Inputs.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/AdcBurst](Examples/AdcBurst/AdcBurst.cpp)
+### [AdcBurst](Examples/AdcBurst/AdcBurst.cpp)
 
 This example program demonstrates the use of
 the Pacer Clock and Burst Clock. This example
@@ -178,7 +178,7 @@ Connect multiple signals to AIN channels.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/AdcExternalTrigger](Examples/AdcExternalTrigger/AdcExternalTrigger.cpp)
+### [AdcExternalTrigger](Examples/AdcExternalTrigger/AdcExternalTrigger.cpp)
 
 This example program uses the external trigger
 to toggle the Pacer Clock. While the External
@@ -194,7 +194,7 @@ Connect the signal of interest to AIN1.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/AnalogDio](Examples/AnalogDio/AnalogDio.cpp)
+### [AnalogDio](Examples/AnalogDio/AnalogDio.cpp)
 
 This example program demonstrates interrupts on the two
 DIO pins on the analog connector (CN9). This program sets pin 1
@@ -209,7 +209,11 @@ Usage:
 Run the program and follow the instructions on-screen.
 
 
-### [Examples/Calibrate](Examples/Calibrate/Calibrate.cpp)
+### [Calibrate](Examples/Calibrate/Calibrate.cpp)
+
+Calibrates the DAC at a specified range using
+the onboard DSP and sets the DAC to a provided
+value after calibration.
 
 Setup:
 No particular setup is required for this example.
@@ -217,12 +221,7 @@ No particular setup is required for this example.
 Usage:
 Run the program and follow the instructions on-screen.
 
-Description:
-Calibrates the DAC at a specified range using
-the onboard DSP and sets the DAC to a provided
-value after calibration.
-
-### [Examples/CgtResetInterrupt](Examples/CgtResetInterrupt/CgtResetInterrupt.cpp)
+### [CgtResetInterrupt](Examples/CgtResetInterrupt/CgtResetInterrupt.cpp)
 
 This example program demonstrates the reset
 interrupt on the channel gain table. The
@@ -238,7 +237,7 @@ No particular setup is required for this example.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/Dac](Examples/Dac/Dac.cpp)
+### [Dac](Examples/Dac/Dac.cpp)
 
 This example program demonstrates the use of the DAC.
 A sawtooth wave will be displayed on whichever
@@ -250,7 +249,7 @@ Connect an oscilloscope to an AOUT channel.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/DacDma](Examples/DacDma/DacDma.cpp)
+### [DacDma](Examples/DacDma/DacDma.cpp)
 
 This example program demonstrates the use of the
 DAC and DMA. A sine wave is generated in the program,
@@ -263,7 +262,7 @@ Connect an oscilloscope to an AOUT channel.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/DelayInterrupt](Examples/DelayInterrupt/DelayInterrupt.cpp)
+### [DelayInterrupt](Examples/DelayInterrupt/DelayInterrupt.cpp)
 
 This example program demonstrates the use of the delay
 counter. The delay counter will wait until 10 samples
@@ -277,7 +276,7 @@ No particular setup is required for this example.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/DioEvent](Examples/DioEvent/DioEvent.cpp)
+### [DioEvent](Examples/DioEvent/DioEvent.cpp)
 
 This example program demonstrates the use of the DIO event
 interrupt mode. This mode triggers an interrupt anytime
@@ -290,7 +289,7 @@ Connect DIO port 0 to DIO port 1.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/DioMatch](Examples/DioMatch/DioMatch.cpp)
+### [DioMatch](Examples/DioMatch/DioMatch.cpp)
 
 This example program demonstrates the use of the DIO match
 interrupt mode. This mode triggers an interrupt anytime
@@ -303,7 +302,7 @@ Connect DIO port 0 to DIO port 1.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/DspVersion](Examples/DspVersion/DspVersion.cpp)
+### [DspVersion](Examples/DspVersion/DspVersion.cpp)
 
 This example program reports the version of the DSP firmware.
 
@@ -324,7 +323,7 @@ Connect pin 21 to pin 35 on CN6.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/Hsdin](Examples/Hsdin/Hsdin.cpp)
+### [Hsdin](Examples/Hsdin/Hsdin.cpp)
 
 This example program demonstrates the use of the High
 Speed Digital Input using UTC0 as the sampling trigger.
@@ -336,7 +335,7 @@ Connect digital signal(s) of interest to the High Speed Inputs.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/HsdinDma](Examples/HsdinDma/HsdinDma.cpp)
+### [HsdinDma](Examples/HsdinDma/HsdinDma.cpp)
 
 This example program demonstrates the use of the High
 Speed Digital Input. It configures the HSDIN port
@@ -349,7 +348,7 @@ Connect digital signal(s) of interest to the High Speed Inputs.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/ListFunctionBlocks](Examples/ListFunctionBlocks/ListFunctionBlocks.cpp)
+### [ListFunctionBlocks](Examples/ListFunctionBlocks/ListFunctionBlocks.cpp)
 
 This example program demonstrates accessing the board-level 
 registers to access the function blocks on the board.  The 
@@ -364,7 +363,7 @@ No particular setup is required for this example.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/Temperature](Examples/Temperature/Temperature.cpp)
+### [Temperature](Examples/Temperature/Temperature.cpp)
 
 This example program demonstrates the temperature sensor
 on the board. It will continually display the temperature
@@ -376,7 +375,7 @@ No particular setup is required for this example.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/Timer](Examples/Timer/Timer.cpp)
+### [Timer](Examples/Timer/Timer.cpp)
 
 This example program demonstrates the use of the User
 Timer Counter. The program will continue counting until
@@ -388,7 +387,7 @@ No particular setup is required for this example.
 Usage:
 Run the program and follow the instructions on-screen.
 
-### [Examples/TimerInterrupt](Examples/TimerInterrupt/TimerInterrupt.cpp)
+### [TimerInterrupt](Examples/TimerInterrupt/TimerInterrupt.cpp)
 
 This example program demonstrates the use of the User Timer
 Counter (UTC) interrupts. An interrupt will occur on UTC1
@@ -424,7 +423,7 @@ from RTD Embedded Technologies, contact us using the information below:
 
 RTD Embedded Technologies, Inc. \
 103 Innovation Blvd. \
-State College, PA 16803 USA \
+State College, PA 16803 USA
 
 Telephone: (814) 234-8087 \
 Fax: (814) 234-5218 \
