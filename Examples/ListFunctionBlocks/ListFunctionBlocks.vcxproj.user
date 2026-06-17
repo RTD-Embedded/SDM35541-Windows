@@ -2,10 +2,22 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LocalDebuggerEnvironment>../</LocalDebuggerEnvironment>
-    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <RemoteDebuggerServerName>DESKTOP-57IPVB8:4026</RemoteDebuggerServerName>
+    <RemoteDebuggerCommand>C:\remotetemp\ListFunctionBlocks\ListFunctionBlocks.exe</RemoteDebuggerCommand>
+    <RemoteDebuggerWorkingDirectory>C:\remotetemp\ListFunctionBlocks</RemoteDebuggerWorkingDirectory>
+    <RemoteDebuggerConnection>RemoteWithoutAuthentication</RemoteDebuggerConnection>
+    <DeploymentDirectory>C:\remotetemp\ListFunctionBlocks</DeploymentDirectory>
+    <AdditionalFiles>$(ProjectDir)\..\SDM35541Lib_x64.dll;$(ProjectDir)\..\SDM35541Lib_x64.lib</AdditionalFiles>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LocalDebuggerEnvironment>../</LocalDebuggerEnvironment>
-    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <RemoteDebuggerServerName>DESKTOP-57IPVB8:4026</RemoteDebuggerServerName>
+    <RemoteDebuggerCommand>C:\remotetemp\ListFunctionBlocks\ListFunctionBlocks.exe</RemoteDebuggerCommand>
+    <RemoteDebuggerWorkingDirectory>C:\remotetemp\ListFunctionBlocks</RemoteDebuggerWorkingDirectory>
+    <RemoteDebuggerConnection>RemoteWithoutAuthentication</RemoteDebuggerConnection>
+    <DeploymentDirectory>C:\remotetemp\ListFunctionBlocks</DeploymentDirectory>
+    <AdditionalFiles>$(ProjectDir)\..\SDM35541Lib_x64.dll;$(ProjectDir)\..\SDM35541Lib_x64.lib</AdditionalFiles>
   </PropertyGroup>
 </Project>

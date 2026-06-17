@@ -1,15 +1,16 @@
-# Windows Software (SDM35541)
+
+Windows Software (SDM35541)
 
 Supports Windows 11 (64 bit)
 
-> SWP-700010188 rev A
+> SWP-700010188 rev B
 >
-> Version: v1.0.0.152277
+> Version: v1.0.1.155292
 
 Copyright (c), RTD Embedded Technologies, Inc. All Rights Reserved
 
 Using this software indicates acceptance of the RTD End-User Software
-License Agreement. See the file LICENSE.TXT.
+License Agreement.  See the file LICENSE.TXT.
 
 ## Table of Contents
 
@@ -26,7 +27,7 @@ License Agreement. See the file LICENSE.TXT.
 
 This software supports the following RTD boards:
 
- - SDM35541
+- [SDM35541](https://www.rtd.com/PC104/DM/analog%20IO/SDM35541.htm)
 
 ## About the Software
 
@@ -34,29 +35,29 @@ This software package contains a driver, library and example programs for
 the Microsoft Windows operating system. This software provides support for the
 SDM35541 dataModule in the following versions of Microsoft Windows:
 
- - Windows 11 (64-bit)
+- Windows 11 (64-bit)
 
 Full source code for the user-mode DLL library and example programs is included 
 in this package. The kernel-mode driver source code may be licensed separately 
 after the purchase of a SDM35541 board. Please contact RTD for more information.
 
-## Installing the Software
+## Installing the Driver
 
-The Windows Software (SDM35541) comes packaged as a ZIP file.  To install the software,
-simply unzip/extract the ZIP file to the location of your choice.
+The driver can be found within the 'Executables' release package under the 
+assets of the latest Github release. Once there, navigate to the `Install\` 
+directory, right click 'SDM35541.inf' and select 'Install'. Afterwards, you can 
+check the installation by finding the board in the Device Manager under 
+'RTD dataModules'. (It should be shown without a yellow exclamation mark.)
 
-If you are installing the software for the first time, see the 'Driver' section to install the driver for your device. Once the driver is installed, see the 'Example Programs' section for
-examples of how to work with the device and its software.
+If updating the driver, simply follow the above steps with the latest
+version of the driver.
 
-## Driver
+As well as the driver itself, you also must install the included Microsoft 
+Visual C++ Redistributable package. This may also be found in the `Install\`
+directory, as `vc_redist.x64.exe`
 
-#### Installing the Driver
-
-To install the driver, open the Windows Device Manager and select 'Action' from the top menu bar. Select 'Add drivers' and set the location to the SDM35541 software package. Afterwards, you can check the installation by finding the board in the Device Manager under 'RTD dataModules' (It should be shown without a yellow exclamation mark).
-
-#### Uninstalling the Driver
-
-If you would like to remove the driver, find the board under 'RTD dataModules' in the Windows Device Manager. Right click on the board and select 'Uninstall Device'. Ensure to check the box 'Remove the driver for this device' before proceeding.
+Please note RTD only provides our Windows drivers precompiled and signed, 
+we do not provide their source code.
 
 ## Supported Compilers
 

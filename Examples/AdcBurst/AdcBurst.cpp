@@ -27,7 +27,7 @@
     --------------------------------------------------------------------------
     @endverbatim
 
-		$Id: AdcBurst.cpp 152297 2026-02-18 14:52:52Z bkorpacz $
+		$Id: AdcBurst.cpp 152331 2026-02-19 15:47:35Z bkorpacz $
 */
 
 #include <limits.h>

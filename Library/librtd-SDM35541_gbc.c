@@ -5,7 +5,7 @@
 		SDM35541 Board library source code
 
 
-	$Id: librtd-SDM35541_gbc.c 104760 2016-11-28 20:17:52Z rgroner $
+	$Id: librtd-SDM35541_gbc.c 153456 2026-04-01 16:00:08Z bkorpacz $
 */
 
 //----------------------------------------------------------------------------
@@ -36,8 +36,9 @@
 #include "SDM35541_dma_library.h"
 #include "SDM35541_board_access_structs.h"
 
-
+#ifndef SDM35541_RESET_DELAY_MICRO_SEC
 #define SDM35541_RESET_DELAY_MICRO_SEC	1000
+#endif
 
 SDM35541LIB_API
 int SDM35541_Gbc_Board_Reset(struct SDM35541_Board_Descriptor *handle)

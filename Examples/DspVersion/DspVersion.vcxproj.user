@@ -6,7 +6,8 @@
     <DeploymentDirectory>C:\remotetemp\DspVersion</DeploymentDirectory>
     <AdditionalFiles>$(ProjectDir)\..\SDM35541Lib_x64.dll;$(ProjectDir)\..\SDM35541Lib_x64.lib</AdditionalFiles>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
-    <RemoteDebuggerServerName>DESKTOP-BVH0IIS:4026</RemoteDebuggerServerName>
+    <RemoteDebuggerServerName>DESKTOP-57IPVB8:4026</RemoteDebuggerServerName>
+    <RemoteDebuggerConnection>RemoteWithoutAuthentication</RemoteDebuggerConnection>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <RemoteDebuggerCommand>C:\remotetemp\DspVersion\DspVersion.exe</RemoteDebuggerCommand>
@@ -14,6 +15,7 @@
     <DeploymentDirectory>C:\remotetemp\DspVersion</DeploymentDirectory>
     <AdditionalFiles>$(ProjectDir)\..\SDM35541Lib_x64.dll;$(ProjectDir)\..\SDM35541Lib_x64.lib</AdditionalFiles>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
-    <RemoteDebuggerServerName>DESKTOP-BVH0IIS:4026</RemoteDebuggerServerName>
+    <RemoteDebuggerServerName>DESKTOP-57IPVB8:4026</RemoteDebuggerServerName>
+    <RemoteDebuggerConnection>RemoteWithoutAuthentication</RemoteDebuggerConnection>
   </PropertyGroup>
 </Project>

@@ -1,9 +1,15 @@
 Change log for Windows Software (SDM35541)
 
-SWP-700010188 rev A
+SWP-700010188 rev B
 
 Copyright (c), RTD Embedded Technologies, Inc. All Rights Reserved
 
 Ver 1.0.0 (rev A)     02/16/2026        BTK
 -------------------------------------------
 - Initial version released. 
+
+Ver 1.0.1 (rev B)     05/29/2026	      NSS
+-------------------------------------------
+- Fixed improper instantiation of 'RTD dataModules' class in driver .inf
+  file, preventing installation of driver in cases where a user had not
+  previously installed a RTD driver before.

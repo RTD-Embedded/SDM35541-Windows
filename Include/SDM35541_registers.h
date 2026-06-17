@@ -4,7 +4,7 @@
     @brief
         Defines for the SDM35541 Registers (Offsets)
 
-    $Id: SDM35541_registers.h 150430 2025-10-24 15:06:44Z bkorpacz $
+    $Id: SDM35541_registers.h 154807 2026-06-02 15:14:13Z asutton $
 */
 
 //----------------------------------------------------------------------------

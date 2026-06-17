@@ -22,7 +22,7 @@
     --------------------------------------------------------------------------
     @endverbatim
 
-		$Id: DspVersion.cpp 152297 2026-02-18 14:52:52Z bkorpacz $
+		$Id: DspVersion.cpp 154804 2026-06-02 14:35:18Z asutton $
 */
 
 #include <stdio.h>
@@ -81,7 +81,7 @@ int main(int argument_count, char **arguments)
     check_result(result, "Error opening the ADC1002 function block.");
 
 	/* Wait for DSP Reset */
-	SDM35541_Micro_Sleep(10000);
+	// SDM35541_Micro_Sleep(1000000);
 
 	/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	   Main program code.
