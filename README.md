@@ -18,6 +18,7 @@ License Agreement.  See the file LICENSE.TXT.
 - [About the Software](#about-the-software)
 - [Installing the Driver](#installing-the-driver)
 - [Supported Compilers](#supported-compilers)
+- [Library Interface](#library-interface)
 - [Header Files](#header-files) 
 - [Example Programs](#example-programs)
 - [Getting Technical Support](#getting-technical-support)
@@ -67,13 +68,17 @@ are welcome to port the examples to the compiler of your choice.
 
 ## Library Interface
 
-The directory `Library`\ contains source code related to the user library.
+The directory `Library\` contains source code related to the user library.
 
 The SDM35541 library is created with a file name of `SDM35541Lib_x64.dll` and is dynamically linked. Please see the files included in this directory for documentation on utilizing the library's API.
 
 SDM35541Lib - API for the SDM35541 Library
 
-## Example programs
+## Header Files
+
+The directory `Include\` contains all header files needed by the example programs, library, and user applications.
+
+## Example Programs
 
 The `Examples\` directory contains example programs (with full source) to
 demonstrate how to use this software. Pre-compiled versions of the examples are
