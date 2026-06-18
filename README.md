@@ -16,8 +16,7 @@ License Agreement.  See the file LICENSE.TXT.
 
 - [Supported Hardware](#supported-hardware)
 - [About the Software](#about-the-software)
-- [Installing the Software](#installing-the-software)
-- [Driver](#driver)
+- [Installing the Driver](#installing-the-driver)
 - [Supported Compilers](#supported-compilers)
 - [Header Files](#header-files) 
 - [Example Programs](#example-programs)
